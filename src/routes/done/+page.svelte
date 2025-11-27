@@ -106,8 +106,8 @@
 </script>
 
 <div class="pt-4">
-    <!-- Header -->
-    <div class="px-4 mb-4">
+    <!-- Header (mobile only) -->
+    <div class="px-4 mb-4 md:hidden">
         <h1 class="text-3xl font-bold mb-2">✅ DONE</h1>
         <p class="text-sm text-gray-500">{completedTasks.length} completed</p>
     </div>

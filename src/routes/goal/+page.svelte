@@ -133,9 +133,9 @@
     }
 </script>
 
-<div class="flex flex-col h-[calc(100vh-5rem)] md:h-screen">
-    <!-- Header -->
-    <div class="px-4 pt-4 pb-2 shrink-0">
+<div class="flex flex-col h-[calc(100vh-5rem)] md:h-[calc(100vh-3.5rem)]">
+    <!-- Header (mobile only) -->
+    <div class="px-4 pt-4 pb-2 shrink-0 md:hidden">
         <h1 class="text-3xl font-bold mb-2">🎯 GOAL</h1>
     </div>
 

@@ -49,8 +49,8 @@
 </script>
 
 <div class="pt-4 pb-8">
-    <!-- Header -->
-    <div class="px-4 mb-4">
+    <!-- Header (mobile only) -->
+    <div class="px-4 mb-4 md:hidden">
         <h1 class="text-3xl font-bold mb-2">👤 ACCOUNT</h1>
     </div>
 
