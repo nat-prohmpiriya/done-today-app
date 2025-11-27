@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* Custom theme colors */
+@theme {
+    --color-q1: #EF4444;
+    --color-q2: #3B82F6;
+    --color-q3: #F59E0B;
+    --color-q4: #6B7280;
+    --color-light-bg: #FFFFFF;
+    --color-light-surface: #F5F5F5;
+    --color-light-text: #1F2937;
+    --color-dark-bg: #1A1A1A;
+    --color-dark-surface: #2D2D2D;
+    --color-dark-text: #F9FAFB;
+    --color-completed: #9CA3AF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @apply bg-white dark:bg-dark-bg text-light-text dark:text-dark-text;
+}
+
+/* Custom component styles */
+@layer components {
+    .btn-primary {
+        @apply px-4 py-2 rounded-lg bg-indigo-500 dark:bg-indigo-600 text-white font-medium hover:bg-indigo-600 dark:hover:bg-indigo-700 transition-colors;
+    }
+
+    .btn-secondary {
+        @apply px-4 py-2 rounded-lg bg-light-surface dark:bg-dark-surface text-light-text dark:text-dark-text font-medium hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors;
+    }
+
+    .btn-icon {
+        @apply w-10 h-10 flex items-center justify-center rounded-full hover:bg-light-surface dark:hover:bg-dark-surface transition-colors;
+    }
+
+    .card {
+        @apply bg-light-surface dark:bg-dark-surface rounded-lg p-4;
+    }
+
+    .input-field {
+        @apply w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-dark-surface text-light-text dark:text-dark-text focus:outline-none focus:ring-2 focus:ring-indigo-500;
+    }
+
+    .checkbox-task {
+        @apply w-5 h-5 rounded border-2 border-gray-300 dark:border-gray-600 cursor-pointer appearance-none checked:bg-indigo-500 checked:border-indigo-500 transition-colors;
+    }
+
+    .task-item {
+        @apply flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-light-surface dark:hover:bg-dark-surface transition-colors cursor-pointer;
+    }
+
+    .quadrant-header {
+        @apply font-bold text-sm mb-3 pb-2 border-b-2;
+    }
+
+    .q1-header {
+        @apply border-q1 text-q1;
+    }
+
+    .q2-header {
+        @apply border-q2 text-q2;
+    }
+
+    .q3-header {
+        @apply border-q3 text-q3;
+    }
+
+    .q4-header {
+        @apply border-q4 text-q4;
+    }
+}
