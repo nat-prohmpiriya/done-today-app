@@ -11,8 +11,8 @@
 	<title>DoneToday</title>
 </svelte:head>
 
-<div class="min-h-screen bg-white dark:bg-dark-bg">
-	<main class="pb-24 max-w-md mx-auto">
+<div class="min-h-screen bg-white dark:bg-dark-bg flex flex-col">
+	<main class="flex-1 pb-20 md:pb-0 max-w-md md:max-w-none mx-auto w-full">
 		{@render children()}
 	</main>
 	<BottomNav />

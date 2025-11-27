@@ -133,15 +133,15 @@
     }
 </script>
 
-<div class="flex flex-col h-full">
+<div class="flex flex-col h-[calc(100vh-5rem)] md:h-screen">
     <!-- Header -->
-    <div class="px-4 pt-4 pb-2 flex-shrink-0">
+    <div class="px-4 pt-4 pb-2 shrink-0">
         <h1 class="text-3xl font-bold mb-2">🎯 GOAL</h1>
     </div>
 
     <!-- Tabs -->
     <div
-        class="flex gap-2 px-4 mb-2 border-b border-gray-200 dark:border-gray-700 flex-shrink-0"
+        class="flex gap-2 px-4 mb-2 border-b border-gray-200 dark:border-gray-700 shrink-0"
     >
         <button
             onclick={() => (currentTab = "matrix")}
